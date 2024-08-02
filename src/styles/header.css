@@ -1,0 +1,34 @@
+.homepage__header{
+    background-color: grey;
+    height: 600px;
+    display: grid;
+    place-items: center;
+    border-radius: 36px;
+    margin-top: 1rem;
+    color: white;
+    background: url("https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?cs=srgb&dl=pexels-binyaminmellish-1396122.jpg&fm=jpg&w=1920&h=1280") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.homepage__header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.405);
+    border-radius: 36px;
+
+    z-index: 1;
+}
+
+.homepage__header * {
+    z-index: 2;
+}
+
+.homepage__header p {
+    margin-top: .8rem;
+    letter-spacing: .2rem;
+}
